@@ -1,0 +1,22 @@
+.home_cabecalho{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.posts_criados{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.grid_posts_criados{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.box_post_criado{
+    margin: 10px;
+}
+
+.post{
+    padding: 20px;
+}

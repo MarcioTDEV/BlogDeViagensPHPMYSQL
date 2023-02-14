@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{color: black;}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+}
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+img{width: 100%;}
+
+.grid_index_home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid_index_home > div{
+    margin: 10px;
+}
+@media (min-width:1000px){
+    .grid_index_home{
+        max-width: 1200px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .grid_index_home > div{
+        margin: 10px;
+    }
+    header{
+        padding-left: 100px;
+    }
+}
+.input_ver_mais{
+    background-color: teal;
+    border: none;
+    box-shadow: none;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 5px;
+}
+.cabecalho_container{
+    padding-left: 10px;
+}
+header{
+    background-image: url("../img/background.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+}
+header a{text-decoration: none;color: #fff;}
+.post{
+    max-width: 500px;
+    margin: 0 auto;
+}
+@media (min-width:1000px){
+    .post{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        max-width: 1200px;
+    }
+    .post div {
+        margin: 20px;
+    }
+    .post_box_img img{
+        width: 500px;
+    }
+}
+
+
+
+.login{
+    
+    max-width: 500px;
+    margin: 0 auto;
+}
+input[type=submit]{
+    background-color: teal;
+    color: white;
+    border: none;
+    box-shadow: none;
+    padding: 5px 10px;
+}
+@media(min-width:800px){
+    .login{
+        max-width: 1000px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .login div{
+        margin: 10px;
+    }
+}
+
+/* // PAGINA NOVO POST */
+.nPostTitulo{
+    margin: 30px;
+    padding: 30px;
+}
+.nPostForm{
+    margin: 20px 0 0 30px;
+    padding-left: 30px;
+}
